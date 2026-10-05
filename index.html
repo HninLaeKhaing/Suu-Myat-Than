@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suu Myat Than Education Foundation</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Merriweather', 'serif'],
+                    },
+                    colors: {
+                        foundation: {
+                            dark: '#0f172a',    // Deep slate/navy
+                            primary: '#212c58', // Exact Dark Navy from Logo
+                            accent: '#f59e0b',  // Warm amber/gold for donations
+                            light: '#f8fafc',   // Off-white background
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* CSS trick to remove white background from logo */
+        .logo-blend {
+            mix-blend-mode: multiply;
+            filter: contrast(1.1);
+        }
+        html { scroll-behavior: smooth; }
+    </style>
+</head>
+<body class="bg-foundation-light text-slate-800 font-sans antialiased flex flex-col min-h-screen">
+
+    <nav class="bg-white shadow-md sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-24">
+                <div class="flex-shrink-0 flex items-center">
+                    <a href="index.html" class="flex items-center gap-3">
+                        <img class="h-20 w-auto logo-blend" src="https://i.ibb.co/pjFdXqxj/Suu-Myat-Than.png" alt="Suu Myat Than Foundation Logo">
+                        <span class="font-serif font-bold text-xl text-blue-900 hidden sm:block leading-tight">Suu Myat Than<br><span class="text-sm font-sans text-gray-500 font-normal">Education Foundation</span></span>
+                    </a>
+                </div>
+                <div class="hidden md:flex space-x-6 items-center">
+                    <a href="index.html" class="text-foundation-primary font-bold border-b-2 border-foundation-primary pb-1">Home</a>
+                    <a href="scholarship.html" class="text-gray-600 hover:text-foundation-primary transition">Scholarship</a>
+                    <a href="fellowship.html" class="text-gray-600 hover:text-foundation-primary transition">Fellowship</a>
+                    <a href="awardees.html" class="text-gray-600 hover:text-foundation-primary transition">Awardees</a>
+                    <a href="winners.html" class="text-gray-600 hover:text-foundation-primary transition">Contest Winners</a>
+                    <a href="about.html" class="text-gray-600 hover:text-foundation-primary transition">About Us</a>
+                    <a href="#donate-section" class="bg-foundation-accent hover:bg-yellow-600 text-white px-6 py-2 rounded-full font-semibold shadow-lg transition transform hover:-translate-y-0.5">Donate Now</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main class="flex-grow">
+        
+        <section class="bg-white py-16 lg:py-24">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col lg:flex-row items-center gap-12">
+                <div class="lg:w-1/2 space-y-8">
+                    <div class="inline-block bg-blue-100 text-foundation-primary px-4 py-1 rounded-full text-sm font-semibold tracking-wide uppercase">
+                        Adopt a Student – 2026
+                    </div>
+                    <h1 class="text-4xl md:text-5xl font-serif font-bold text-foundation-dark leading-tight">
+                        Sow the seeds of Education for Tomorrow's Leaders of Myanmar
+                    </h1>
+                    <blockquote class="border-l-4 border-foundation-accent pl-4 italic text-gray-600 text-lg">
+                        "To forge a truly brighter future for Myanmar, we must recognize that our young people are the most precious resource and the architects of tomorrow. Investing in their educational aspirations is a strategic imperative, ensuring that a generation of dedicated leaders and innovators will be ready to return home when the time is right. Every scholarship is a powerful commitment to national restoration, fueling the engine of progress. We must champion their resilience and ensure the light of knowledge is never extinguished."
+                    </blockquote>
+                    <p class="text-lg text-gray-700 leading-relaxed">
+                        To build a brighter future for Myanmar, we must strategically invest in its next generation of leaders. We are urgently fundraising to meet our <strong>$12,000 goal</strong>, which will provide <strong>10 crucial scholarships of $1,200 each</strong> to ensure resilient young people can continue their education abroad. Your generous donation is not just aid; it is a powerful investment in human capital that makes their dreams, and Myanmar's future, possible.
+                    </p>
+                    <div class="flex gap-4">
+                        <a href="#donate-section" class="bg-foundation-primary hover:bg-blue-800 text-white px-8 py-3 rounded-md font-semibold shadow-md transition text-lg">Make a Donation</a>
+                        <a href="about.html" class="bg-gray-100 hover:bg-gray-200 text-gray-800 px-8 py-3 rounded-md font-semibold shadow-sm transition text-lg">Our Story</a>
+                    </div>
+                </div>
+                <div class="lg:w-1/2">
+                    <div class="relative rounded-2xl overflow-hidden shadow-2xl">
+                        <img src="https://i.ibb.co/chzK2r5s/girl.png" alt="Student from Myanmar" class="w-full h-auto object-cover">
+                        <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-6">
+                            <p class="text-white font-serif text-xl">Empowering Myanmar's Youth</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-foundation-light py-16 border-t border-gray-200">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-3xl font-serif font-bold text-center text-foundation-dark mb-10">Explore Our Foundation</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-6">
+                    <a href="scholarship.html" class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition border border-gray-100 flex flex-col items-center text-center group">
+                        <div class="h-12 w-12 bg-blue-50 text-foundation-primary rounded-full flex items-center justify-center mb-4 group-hover:scale-110 transition border border-blue-100">🎓</div>
+                        <h3 class="font-bold text-gray-800">Scholarships</h3>
+                        <p class="text-sm text-gray-500 mt-2">Apply for or view our 2026 cycle.</p>
+                    </a>
+                    <a href="fellowship.html" class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition border border-gray-100 flex flex-col items-center text-center group">
+                        <div class="h-12 w-12 bg-blue-50 text-foundation-primary rounded-full flex items-center justify-center mb-4 group-hover:scale-110 transition border border-blue-100">🤝</div>
+                        <h3 class="font-bold text-gray-800">Fellowships</h3>
+                        <p class="text-sm text-gray-500 mt-2">Advanced support programs.</p>
+                    </a>
+                    <a href="awardees.html" class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition border border-gray-100 flex flex-col items-center text-center group">
+                        <div class="h-12 w-12 bg-blue-50 text-foundation-primary rounded-full flex items-center justify-center mb-4 group-hover:scale-110 transition border border-blue-100">🌟</div>
+                        <h3 class="font-bold text-gray-800">Awardees</h3>
+                        <p class="text-sm text-gray-500 mt-2">Meet our inspiring students.</p>
+                    </a>
+                    <a href="winners.html" class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition border border-gray-100 flex flex-col items-center text-center group">
+                        <div class="h-12 w-12 bg-blue-50 text-foundation-primary rounded-full flex items-center justify-center mb-4 group-hover:scale-110 transition border border-blue-100">🏆</div>
+                        <h3 class="font-bold text-gray-800">Contest Winners</h3>
+                        <p class="text-sm text-gray-500 mt-2">Celebrating academic excellence.</p>
+                    </a>
+                    <a href="about.html" class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition border border-gray-100 flex flex-col items-center text-center group">
+                        <div class="h-12 w-12 bg-blue-50 text-foundation-primary rounded-full flex items-center justify-center mb-4 group-hover:scale-110 transition border border-blue-100">📖</div>
+                        <h3 class="font-bold text-gray-800">About Us</h3>
+                        <p class="text-sm text-gray-500 mt-2">Our mission and history.</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section id="about-section" class="py-16 bg-white">
+            <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 space-y-16">
+                
+                <div>
+                    <h2 class="text-3xl font-serif font-bold text-foundation-dark mb-4 border-b-2 border-foundation-accent pb-2 inline-block">The Inception of Our Foundation</h2>
+                    <p class="text-gray-700 leading-relaxed text-lg mt-4">
+                        The Suu Myat Than Education Foundation was established in loving memory of our beloved daughter, Suu Myat Than, whose life was tragically cut short at the age of 20. Through this foundation, we honor her memory by providing vital educational support to students from Myanmar.
+                    </p>
+                </div>
+
+                <div class="bg-gray-50 p-8 rounded-2xl border border-gray-100">
+                    <h2 class="text-3xl font-serif font-bold text-foundation-dark mb-4">Responding to a Crisis in Education</h2>
+                    <p class="text-gray-700 leading-relaxed text-lg mb-4">
+                        Higher education in Myanmar is currently facing severe, unexpected disruption. These unstable conditions have compelled a massive exodus of young people who are now seeking educational opportunities abroad, with Southeast Asia becoming a primary destination. 
+                    </p>
+                    <p class="text-gray-700 leading-relaxed text-lg">
+                        The escalating internal conflict and recent national service requirements have further compounded this crisis, driving thousands more out of the country in a desperate effort to continue their studies. This substantial outflow represents a major collapse of human capital that casts a bleak shadow over Myanmar’s future prospects.
+                    </p>
+                </div>
+
+                <div>
+                    <h2 class="text-3xl font-serif font-bold text-foundation-dark mb-4 border-b-2 border-foundation-primary pb-2 inline-block">Our Impact and Future Commitment</h2>
+                    <p class="text-gray-700 leading-relaxed text-lg mt-4 mb-4">
+                        Despite the overwhelming need, our foundation is actively working to fill this gap. We made our first award in 2024, granting a $1,200 scholarship to a student at Ton Duc Thang University in Ho Chi Minh City, Vietnam. This single university highlights the need, with over sixty Myanmar students enrolled there alone, and many more studying across the region.
+                    </p>
+                    <p class="text-gray-700 leading-relaxed text-lg mb-4">
+                        The momentum continued, and by 2025, the Foundation was able to make 30 awards, significantly expanding our support for deserving students.
+                    </p>
+                    <div class="bg-blue-50 border-l-4 border-foundation-primary p-6 mt-6">
+                        <p class="text-gray-800 font-semibold text-lg">
+                            We are proud to announce our upcoming application cycle. The application forms for the next round of scholarships will open on <span class="text-foundation-primary">November 2, 2026</span>. Each $1,200 scholarship is designed to help cover a student’s expenses and directly support their vital academic pursuits, ensuring they can complete their education and one day contribute to a brighter future for Myanmar.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="donate-section" class="py-16 bg-foundation-dark text-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-12">
+                    <h2 class="text-4xl font-serif font-bold mb-4">Support a Scholar Today</h2>
+                    <p class="text-gray-300 text-lg max-w-2xl mx-auto">Any donation amount is welcome. Choose your preferred method or become an annual donor to make a lasting impact.</p>
+                </div>
+
+                <div class="grid grid-cols-1 xl:grid-cols-2 gap-12">
+                    
+                    <div class="bg-slate-800 rounded-2xl p-8 shadow-xl border border-slate-700">
+                        <h3 class="text-2xl font-bold mb-6 text-foundation-accent border-b border-slate-600 pb-4">How to Donate</h3>
+                        <ul class="space-y-6">
+                            
+                            <li class="flex flex-col lg:flex-row items-start lg:items-center justify-between border-b border-slate-700 pb-6 gap-6">
+                                <div>
+                                    <span class="block font-bold text-lg">Online Payment</span>
+                                    <span class="text-sm text-gray-400">Securely via PayPal or Stripe</span>
+                                </div>
+                                <div class="flex flex-col sm:flex-row gap-3 w-full lg:w-auto">
+                                    <a href="https://www.paypal.com/us/fundraiser/charity/5103272" target="_blank" rel="noopener noreferrer" class="bg-[#0070ba] hover:bg-[#005ea6] text-white px-6 py-2.5 rounded-md font-semibold transition text-center shadow-md whitespace-nowrap">
+                                        Donate with PayPal
+                                    </a>
+                                    <a href="https://buy.stripe.com/test_14k28t6hG85aa2seUU" target="_blank" rel="noopener noreferrer" class="bg-[#635bff] hover:bg-[#4b45cc] text-white px-6 py-2.5 rounded-md font-semibold transition text-center shadow-md whitespace-nowrap">
+                                        Donate with Credit Card
+                                    </a>
+                                </div>
+                            </li>
+
+                            <li class="border-b border-slate-700 pb-4">
+                                <span class="block font-bold text-lg text-green-400">Zelle</span>
+                                <span class="text-gray-300 select-all font-mono">suumyatthanfoundation@gmail.com</span> / Suu Myat Than Foundation
+                            </li>
+                            <li class="border-b border-slate-700 pb-4">
+                                <span class="block font-bold text-lg text-blue-400">Venmo</span>
+                                <span class="text-gray-300 select-all font-mono">@suumyatthanfoundation</span>
+                            </li>
+                            <li>
+                                <span class="block font-bold text-lg text-yellow-400">Check</span>
+                                <span class="text-gray-300">Please text to <strong class="text-white">510-735-1962</strong> for the addressee details.</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="space-y-8">
+                        <div class="bg-slate-800 rounded-2xl p-8 shadow-xl border border-slate-700">
+                            <h3 class="text-2xl font-bold mb-6 text-foundation-accent border-b border-slate-600 pb-4">Annual Donor Levels</h3>
+                            <div class="grid grid-cols-2 gap-4">
+                                <div class="bg-slate-700 p-4 rounded-lg text-center border border-slate-600"><span class="block font-bold text-white">Benefactor</span><span class="text-foundation-accent font-semibold">$1,200</span></div>
+                                <div class="bg-slate-700 p-4 rounded-lg text-center border border-slate-600"><span class="block font-bold text-white">Patron</span><span class="text-foundation-accent font-semibold">$900</span></div>
+                                <div class="bg-slate-700 p-4 rounded-lg text-center border border-slate-600"><span class="block font-bold text-white">Guardian</span><span class="text-foundation-accent font-semibold">$600</span></div>
+                                <div class="bg-slate-700 p-4 rounded-lg text-center border border-slate-600"><span class="block font-bold text-white">Advocate</span><span class="text-foundation-accent font-semibold">$300</span></div>
+                                <div class="bg-slate-700 p-4 rounded-lg text-center border border-slate-600"><span class="block font-bold text-white">Contributor</span><span class="text-foundation-accent font-semibold">$100</span></div>
+                                <div class="bg-slate-700 p-4 rounded-lg text-center border border-slate-600"><span class="block font-bold text-white">Supporter</span><span class="text-foundation-accent font-semibold">Any Amount</span></div>
+                            </div>
+                        </div>
+
+                        <div class="bg-gradient-to-r from-foundation-primary to-blue-900 rounded-2xl p-8 shadow-xl border border-blue-800">
+                            <h3 class="text-xl font-bold mb-4 text-white">As A Token of Our Appreciation</h3>
+                            <ul class="space-y-3 text-blue-100">
+                                <li class="flex items-start gap-3">
+                                    <span>💌</span>
+                                    <span>A heartfelt video or letter of thanks from the student you've supported.</span>
+                                </li>
+                                <li class="flex items-start gap-3">
+                                    <span>👕</span>
+                                    <span>A Scholarship Fund T-shirt to showcase your commitment to education.</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="bg-slate-900 text-slate-400 py-12 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center gap-6">
+            <div class="flex items-center gap-3">
+                <img class="h-10 w-auto opacity-70 grayscale" src="https://i.ibb.co/pjFdXqxj/Suu-Myat-Than.png" alt="Footer Logo">
+                <span class="font-serif font-bold text-lg text-white">Suu Myat Than Foundation</span>
+            </div>
+            
+            <div class="flex flex-col md:flex-row gap-6 md:gap-12 text-center md:text-left">
+                <div>
+                    <span class="block text-sm uppercase tracking-wider text-slate-500 mb-1">Email Us</span>
+                    <a href="mailto:foundation@suumyatthan.org" class="text-white hover:text-foundation-accent transition">foundation@suumyatthan.org</a>
+                </div>
+                <div>
+                    <span class="block text-sm uppercase tracking-wider text-slate-500 mb-1">Telephone</span>
+                    <a href="tel:+15107351962" class="text-white hover:text-foundation-accent transition">510-735-1962</a>
+                </div>
+                <div>
+                    <span class="block text-sm uppercase tracking-wider text-slate-500 mb-2">Follow Us</span>
+                    <div class="flex justify-center md:justify-start gap-4">
+                        <a href="https://www.facebook.com/suuthanfoundation" target="_blank" rel="noopener noreferrer" class="text-white hover:text-blue-500 transition" aria-label="Facebook">
+                            <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd" />
+                            </svg>
+                        </a>
+                        <a href="https://www.instagram.com/suumyatthanfoundation?igsh=aWNoM2ZnYnlycTZ1" target="_blank" rel="noopener noreferrer" class="text-white hover:text-pink-500 transition" aria-label="Instagram">
+                            <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path fill-rule="evenodd" d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z" clip-rule="evenodd" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-8 pt-8 border-t border-slate-800 text-center text-sm">
+            &copy; 2026 Suu Myat Than Foundation. All rights reserved.
+        </div>
+    </footer>
+
+</body>
+</html>
